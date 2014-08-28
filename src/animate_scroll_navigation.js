@@ -1,5 +1,5 @@
-(function($){
-    'use strict';
+'use strict';
+(function($) {
 
     // thi is me :)
     var me = false;
@@ -136,10 +136,16 @@
 
         // showing next element
         next : function() {
+
+            if (-1 === currentElement) {
+              currentElement = 0;
+            }
+
             // only if next element won't be out of elements array
-            if ((currentElement + 1) <= elementHashes.length) {
+            if ((currentElement + 1) < elementHashes.length) {
                 currentElement += 1;
             }
+
             showElement();
         },
 
