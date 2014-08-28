@@ -1,0 +1,37 @@
+h1, h3
+{
+  text-align: center;
+}
+
+#section1
+{
+  background: url(images/sativa.png);
+}
+
+#section2
+{
+  background: url(images/congruent_outline.png);
+}
+
+#section2 h1
+{
+  color: #fff;
+}
+
+#section3
+{
+  background: url(images/congruent_pentagon.png);
+}
+
+#section4
+{
+  background: url(images/restaurant_icons.png);
+}
+
+#hoverNavigation
+{
+  position: fixed;
+  bottom: 0;
+  right: 25px;
+  width: 100px;
+}

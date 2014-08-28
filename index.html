@@ -2,22 +2,78 @@
 <html>
 <head>
   <title>animateScrollNavigation.js Demo</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="fullpage">
-    <div class="section" id="section1">
-        section1
+<div class="container-fluid">
+  <div class="row" id="fullpage">
+    <div class="col-sm-12">
+      <div class="row section" id="section1">
+          <div class="col-sm-12">
+            <h1 class="hidden-xs">animateScrollNavigation.js</h1>
+            <h3 class="visible-xs">animateScrollNavigation.js</h3>
+          </div>
+      </div>
+      <div class="row section" id="section2">
+          <div class="col-sm-12">
+            <h1>section :: 2</h1>
+          </div>
+      </div>
+      <div class="row section" id="section3">
+          <div class="col-sm-12">
+            <h1>section :: 3</h1>
+          </div>
+      </div>
+      <div class="row section" id="section4">
+          <div class="col-sm-12">
+            <h1>section :: 4</h1>
+          </div>
+      </div>
     </div>
-    <div class="section" id="section2">
-        section2
+  </div>
+</div>
+
+<div id="hoverNavigation">
+<div class="row">
+  <div class="col-xs-6">
+    <div class="row">
+      <div class="col-xs-12">
+        <span class="label label-default">Section</span>
+      </div>
     </div>
-    <div class="section" id="section3">
-        section3
+    <div class="row">
+      <div class="col-xs-12">
+        <span class="label label-warning"><span id="pageNo"></span> / <span id="pageMax"></span></span>
+      </div>
     </div>
-    <div class="section" id="section4">
-        section4
+  </div>
+  <div class="col-xs-6">
+    <div class="row">
+      <div class="col-xs-12">
+        <a class="singlePageNavigationUp" href="">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa  fa-arrow-up fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <a class="singlePageNavigationDown" href="">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa  fa-arrow-down fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
 
 <!-- jQuery -->
@@ -30,8 +86,31 @@
 <script src="dist/animate_scroll_navigation.min.js"></script>
 
 <script>
-    $(document).ready(function(){
+    $(document).ready(function() {
+
         $('#fullpage').animateScrollNavigation();
+
+        var getCurrentPageInfo = function() {
+          var current = $('#fullpage').animateScrollNavigation('getCurrent');
+          $('#pageNo').html(current.id + 1);
+          $('#pageMax').html(current.max);
+        };
+
+        getCurrentPageInfo();
+
+        $('.singlePageNavigationUp').on('click', function(event) {
+            event.preventDefault();
+            $('#fullpage').animateScrollNavigation('previous');
+        });
+
+        $('.singlePageNavigationDown').on('click', function(event) {
+            event.preventDefault();
+            $('#fullpage').animateScrollNavigation('next');
+        });
+
+        $(window).on('scroll', function() {
+          getCurrentPageInfo();
+        });
     });
 </script>
 
