@@ -21,6 +21,17 @@ I needed jQuery plugin allowing me to nicely navigate around single page website
 
 This is why I bothered writing this plugin. If its features are what you are looking for - that's perfect! :)
 
+INSTALLATION
+-------------------
+
+via bower:
+
+```
+bower install animatescroll-navigation
+```
+
+or simply download latest source code from repository: [link](https://github.com/wasilak/animateScrollNavigation.js/archive/master.zip)
+
 USAGE
 -------------------
 
