@@ -1,0 +1,15 @@
+{
+  "name": "animatescroll",
+  "homepage": "https://github.com/ramswaroop/animatescroll.js",
+  "version": "1.0.7",
+  "_release": "1.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.7",
+    "commit": "58093b2d34c743f9d20517713b4e16b50a9a6bf8"
+  },
+  "_source": "git://github.com/ramswaroop/animatescroll.js.git",
+  "_target": "~1.0.7",
+  "_originalSource": "animatescroll",
+  "_direct": true
+}
