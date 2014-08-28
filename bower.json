@@ -1,7 +1,17 @@
 {
-  "name": "animateScrollNavigation.js",
-  "version": "0.0.6",
+  "name": "animate-scroll-navigation",
+  "description": "Singe page navigation jQuery using AnimateScroll",
   "main": "dist/animate_scroll_navigation.js",
+  "keywords": ["navigation", "singlepage", "scroll"],
+  "homepage": "https://github.com/wasilak/animateScrollNavigation.js",
+  "repository": {
+    "type": "git",
+    "url": "ggit@github.com:wasilak/animateScrollNavigation.js.git"
+  },
+  "license": "MIT",
+  "authors": [
+    "Piotr Wasilewski", "Piotr Wasilewski <piotr.m.wasilewski@gmail.com>"
+  ],
   "ignore": [
     ".gitignore",
     ".jshintrc",
