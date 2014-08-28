@@ -3,6 +3,7 @@ AnimateScrollNavigation.js
 
 A Simple jQuery Plugin extending [animateScroll](https://github.com/ramswaroop/animatescroll.js) plugin with Single Page Scroll Capabilities
 
+You can see demo [here](http://wasilak.github.io/animateScrollNavigation.js).
 
 Why bother?
 -------------------
@@ -142,7 +143,7 @@ $('#fullpage').animateScrollNavigation('next');
 $('#fullpage').animateScrollNavigation('previous');
 ```
 
-In order to go to particular section (i.e. ````section2```), you can use this:
+In order to go to particular section (i.e. ```section2```), you can use this:
 
 ```js
 $('#fullpage').animateScrollNavigation('goTo', 'section2');
