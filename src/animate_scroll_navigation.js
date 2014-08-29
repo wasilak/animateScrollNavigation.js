@@ -255,7 +255,7 @@
 
             $(element).offset({
               top: currentOffset,
-              left: 0
+              left: 'auto'
             });
 
             currentOffset += currentHeight;
