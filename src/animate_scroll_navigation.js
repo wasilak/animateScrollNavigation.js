@@ -105,7 +105,7 @@
                         history.pushState(null, null, '#' + elementHashes[currentElement]);
 
                         $('[data-scroll!=""]').removeClass('active');
-                        $('[data-scroll="' + elementHashes[currentElement] + '"').addClass('active');
+                        $('[data-scroll="' + elementHashes[currentElement] + '"]').addClass('active');
                     }
                     else {
 

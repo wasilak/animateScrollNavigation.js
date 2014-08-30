@@ -1,6 +1,6 @@
 {
   "name": "animatescroll-navigation",
-  "description": "Singe page navigation jQuery using AnimateScroll",
+  "description": "Single page navigation jQuery using AnimateScroll",
   "main": "dist/animate_scroll_navigation.js",
   "keywords": ["navigation", "singlepage", "scroll"],
   "homepage": "https://github.com/wasilak/animateScrollNavigation.js",
