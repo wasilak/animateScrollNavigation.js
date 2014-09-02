@@ -104,8 +104,8 @@
                         // pushing state to browser with History API
                         history.pushState(null, null, '#' + elementHashes[currentElement]);
 
-                        $('[data-scroll!=""]').removeClass('active');
-                        $('[data-scroll="' + elementHashes[currentElement] + '"]').addClass('active');
+                        $('[data-scroll!=""]').removeClass('activeNavigationElement');
+                        $('[data-scroll="' + elementHashes[currentElement] + '"]').addClass('activeNavigationElement');
                     }
                     else {
 
