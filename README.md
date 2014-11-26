@@ -1,5 +1,6 @@
 AnimateScrollNavigation.js
 =============
+[![Code Climate](https://codeclimate.com/github/wasilak/animateScrollNavigation.js/badges/gpa.svg)](https://codeclimate.com/github/wasilak/animateScrollNavigation.js)
 
 A Simple jQuery Plugin extending [animateScroll](https://github.com/ramswaroop/animatescroll.js) plugin with Single Page Scroll Capabilities
 
